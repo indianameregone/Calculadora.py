@@ -3,7 +3,7 @@ ventana = Tk()
 ventana.title("Calculadora")
 
 #Entrada de texto
-e_text=Entry(ventana, font=("arial 20"))
+e_text=Entry(ventana, font=("calibri 20"))
 e_text.grid(row=0,column=0,columnspan =4,padx=5,pady=5)
 i = 0
 def click_boton(value):
@@ -23,27 +23,27 @@ def ops():
     i = 0
 
 #Botones
-boton1 = Button(ventana,text = "1",width = 5, height = 2,command = lambda:click_boton(1))
-boton2 = Button(ventana,text = "2",width = 5, height = 2,command = lambda:click_boton(2))
-boton3 = Button(ventana,text = "3",width = 5, height = 2,command = lambda:click_boton(3))
-boton4 = Button(ventana,text = "4",width = 5, height = 2,command = lambda:click_boton(4))
-boton5 = Button(ventana,text = "5",width = 5, height = 2,command = lambda:click_boton(5))
-boton6 = Button(ventana,text = "6",width = 5, height = 2,command = lambda:click_boton(6))
-boton7 = Button(ventana,text = "7",width = 5, height = 2,command = lambda:click_boton(7))
-boton8 = Button(ventana,text = "8",width = 5, height = 2,command = lambda:click_boton(8))
-boton9 = Button(ventana,text = "9",width = 5, height = 2,command = lambda:click_boton(9))
-boton0 = Button(ventana,text = "0",width = 16, height = 2,command = lambda:click_boton(0))
+boton1 = Button(ventana,text = "1",width = 8, height = 2,command = lambda:click_boton(1))
+boton2 = Button(ventana,text = "2",width = 8, height = 2,command = lambda:click_boton(2))
+boton3 = Button(ventana,text = "3",width = 8, height = 2,command = lambda:click_boton(3))
+boton4 = Button(ventana,text = "4",width = 8, height = 2,command = lambda:click_boton(4))
+boton5 = Button(ventana,text = "5",width = 8, height = 2,command = lambda:click_boton(5))
+boton6 = Button(ventana,text = "6",width = 8, height = 2,command = lambda:click_boton(6))
+boton7 = Button(ventana,text = "7",width = 8, height = 2,command = lambda:click_boton(7))
+boton8 = Button(ventana,text = "8",width = 8, height = 2,command = lambda:click_boton(8))
+boton9 = Button(ventana,text = "9",width = 8, height = 2,command = lambda:click_boton(9))
+boton0 = Button(ventana,text = "0",width = 20, height = 2,command = lambda:click_boton(0))
 
-boton_erase = Button(ventana,text = "AC",width = 5, height = 2,command = lambda:erase())
-boton_parentesis1 = Button(ventana,text = "(",width = 5, height = 2,command = lambda:click_boton("("))
-boton_parentesis2 = Button(ventana,text = ")",width = 5, height = 2,command = lambda:click_boton(")"))
-boton_dot = Button(ventana,text = ".",width = 5, height = 2,command = lambda:click_boton("."))
+boton_erase = Button(ventana,text = "AC",width = 8, height = 2,command = lambda:erase())
+boton_parentesis1 = Button(ventana,text = "(",width = 8, height = 2,command = lambda:click_boton("("))
+boton_parentesis2 = Button(ventana,text = ")",width = 8, height = 2,command = lambda:click_boton(")"))
+boton_dot = Button(ventana,text = ".",width = 8, height = 2,command = lambda:click_boton("."))
 
-boton_div = Button(ventana,text = "/",width = 5, height = 2,command = lambda:click_boton("/"))
-boton_mult = Button(ventana,text = "x",width = 5, height = 2,command = lambda:click_boton("x"))
-boton_sum = Button(ventana,text = "+",width = 5, height = 2,command = lambda:click_boton("+"))
-boton_res = Button(ventana,text = "-",width = 5, height = 2,command = lambda:click_boton("-"))
-boton_equal = Button(ventana,text = "=",width = 5, height = 2,command = lambda:ops())
+boton_div = Button(ventana,text = "/",width = 8, height = 2,command = lambda:click_boton("/"))
+boton_mult = Button(ventana,text = "x",width = 8, height = 2,command = lambda:click_boton("x"))
+boton_sum = Button(ventana,text = "+",width = 8, height = 2,command = lambda:click_boton("+"))
+boton_res = Button(ventana,text = "-",width = 8, height = 2,command = lambda:click_boton("-"))
+boton_equal = Button(ventana,text = "=",width = 8, height = 2,command = lambda:ops())
 
 #Botones en posicion
 boton_erase.grid(row = 1,column = 0,padx = 5,pady = 5)
